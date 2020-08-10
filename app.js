@@ -1,3 +1,4 @@
+// API key is public, contains no sensitive data
 API_KEY="ur768589-bb44be9022e2101d29af7f16"
 API_URL="https://api.uptimerobot.com/v2/getMonitors"
 
@@ -31,7 +32,6 @@ function getInfo(statusInfo, monitorNr, monitorName, statSpanId, timeSpanId) {
         document.getElementById(statSpanId).innerHTML = "Kan niet controleren."
     };
     document.getElementById(timeSpanId).innerHTML = `${lastDown}`
-
 }
 
 function unixTimeConverter(unixTime) {
